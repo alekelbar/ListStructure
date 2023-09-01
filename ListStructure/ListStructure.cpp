@@ -1,6 +1,4 @@
 // ListStructure.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
 #include "MyList.hpp"
 #include "Expect.hpp"
@@ -22,6 +20,7 @@ int main()
 	list.removeLast();
 	Expect<int>(list.get(0)).toEqual(-1, "Al remover un elemento al final, NO se remueve correctamente");
 
+	list.showList();
 	return EXIT_SUCCESS;
 }
 
